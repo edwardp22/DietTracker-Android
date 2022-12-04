@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Editor">
+
+    <EditText
+        android:id="@+id/edtTimeEditor"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="00:00"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toEndOf="@+id/btnDateEditor"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEditor" />
+
+    <Button
+        android:id="@+id/btnTimeEditor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="Select"
+        app:layout_constraintStart_toEndOf="@+id/edtTimeEditor"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEditor" />
+
+    <EditText
+        android:id="@+id/edtProteinsEditor"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Proteins"
+        android:inputType="number"
+        android:textColorHint="#78909C"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/edtFatEditor"
+        app:layout_constraintTop_toBottomOf="@+id/textView5Editor" />
+
+    <TextView
+        android:id="@+id/textView5Editor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="20dp"
+        android:text="Proteins (g)"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textView4Editor"
+        app:layout_constraintTop_toBottomOf="@+id/edtCarbohydratesEditor" />
+
+    <EditText
+        android:id="@+id/edtFatEditor"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Fat"
+        android:inputType="number"
+        android:textColorHint="#78909C"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4Editor" />
+
+    <TextView
+        android:id="@+id/textView4Editor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Fat (g)"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtCaloriesEditor" />
+
+    <EditText
+        android:id="@+id/edtCarbohydratesEditor"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Carbohydrates"
+        android:inputType="number"
+        android:textColorHint="#78909C"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/edtCaloriesEditor"
+        app:layout_constraintTop_toBottomOf="@+id/textView3Editor" />
+
+    <TextView
+        android:id="@+id/textView3Editor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="20dp"
+        android:text="Carbohydrates (g)"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textView2Editor"
+        app:layout_constraintTop_toBottomOf="@+id/edtTimeEditor" />
+
+    <TextView
+        android:id="@+id/textViewEditor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Update Meal Information"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2Editor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Calories"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtDateEditor" />
+
+    <EditText
+        android:id="@+id/edtCaloriesEditor"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Calories"
+        android:inputType="number"
+        android:textColorHint="#78909C"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2Editor" />
+
+    <Button
+        android:id="@+id/btnSaveMealEditor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edtDateEditor"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="dd/mm/yyyy"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEditor" />
+
+    <Button
+        android:id="@+id/btnDateEditor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="Select"
+        app:layout_constraintStart_toEndOf="@+id/edtDateEditor"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEditor" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/design_default_color_error"
+        android:text="Delete"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
