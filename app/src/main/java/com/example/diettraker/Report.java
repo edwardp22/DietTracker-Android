@@ -17,6 +17,7 @@ public class Report extends Fragment {
         View view = inflater.inflate(R.layout.activity_report, container, false);
 
         DatabaseHandler db = new DatabaseHandler(view.getContext());
+
         List<Meal> meals = db.getSummary();
 
         ListView lvList = view.findViewById(R.id.lvListSummary);

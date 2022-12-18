@@ -23,6 +23,7 @@ public class History extends Fragment {
         View view = inflater.inflate(R.layout.history_layout, container, false);
 
         DatabaseHandler db = new DatabaseHandler(view.getContext());
+
         meals = db.getAllMeals();
 
         lvList = view.findViewById(R.id.lvList);
